@@ -839,6 +839,10 @@ footer p {
     border-bottom: 1px solid var(--border-grey);
   }
 
+  nav a {
+  color: #ffffff !important;  /* or white if background is dark */
+  font-weight: 500;
+}
   nav li:last-child a {
     border-bottom: none;
   }
