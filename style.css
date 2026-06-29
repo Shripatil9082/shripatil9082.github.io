@@ -1,12 +1,12 @@
 :root {
-    --bg-white: #0B1120;
-    --primary-navy: #E5E7EB;
-    --secondary-grey: #94A3B8;
-    --border-grey: #1E293B;
-    --accent-blue: #38BDF8;
+  --bg-white: #0b1120;
+  --primary-navy: #e5e7eb;
+  --secondary-grey: #94a3b8;
+  --border-grey: #1e293b;
+  --accent-blue: #38bdf8;
 
-  --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
+  --font-family:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --container-max-width: 1200px;
   --section-spacing: 80px;
@@ -36,8 +36,12 @@ body {
   font-size: 16px;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--primary-navy);
   font-weight: 600;
   line-height: 1.2;
@@ -147,7 +151,8 @@ section {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -156,7 +161,8 @@ section {
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
   }
   50% {
@@ -192,7 +198,9 @@ header {
   font-weight: 700;
   color: var(--primary-navy);
   text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .logo:hover {
@@ -207,16 +215,39 @@ nav ul {
 }
 
 nav li {
-
   animation: fadeInDown 0.6s ease-out;
 }
 
-nav li:nth-child(1) { animation-delay: 0.1s; opacity: 0; animation-fill-mode: forwards; }
-nav li:nth-child(2) { animation-delay: 0.2s; opacity: 0; animation-fill-mode: forwards; }
-nav li:nth-child(3) { animation-delay: 0.3s; opacity: 0; animation-fill-mode: forwards; }
-nav li:nth-child(4) { animation-delay: 0.4s; opacity: 0; animation-fill-mode: forwards; }
-nav li:nth-child(5) { animation-delay: 0.5s; opacity: 0; animation-fill-mode: forwards; }
-nav li:nth-child(6) { animation-delay: 0.6s; opacity: 0; animation-fill-mode: forwards; }
+nav li:nth-child(1) {
+  animation-delay: 0.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+nav li:nth-child(2) {
+  animation-delay: 0.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+nav li:nth-child(3) {
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+nav li:nth-child(4) {
+  animation-delay: 0.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+nav li:nth-child(5) {
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+nav li:nth-child(6) {
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
 
 nav a {
   color: var(--secondary-grey);
@@ -229,7 +260,7 @@ nav a {
 }
 
 nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -279,13 +310,18 @@ nav a.active {
 }
 
 .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -391,8 +427,8 @@ nav a.active {
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 20%;
-  box-shadow: 0 10px 40px rgba(56, 189, 248, 0.2);
+  object-position: center 10%;
+  box-shadow: 0 30px 50px rgba(56, 189, 248, 0.2);
 }
 
 .about-content {
@@ -409,9 +445,15 @@ nav a.active {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.about-text p:nth-child(1) { animation-delay: 0.2s; }
-.about-text p:nth-child(2) { animation-delay: 0.4s; }
-.about-text p:nth-child(3) { animation-delay: 0.6s; }
+.about-text p:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.about-text p:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.about-text p:nth-child(3) {
+  animation-delay: 0.6s;
+}
 
 .skills-grid {
   display: grid;
@@ -430,11 +472,21 @@ nav a.active {
   animation: scaleIn 0.6s ease-out forwards;
 }
 
-.skill-card:nth-child(1) { animation-delay: 0.1s; }
-.skill-card:nth-child(2) { animation-delay: 0.2s; }
-.skill-card:nth-child(3) { animation-delay: 0.3s; }
-.skill-card:nth-child(4) { animation-delay: 0.4s; }
-.skill-card:nth-child(5) { animation-delay: 0.5s; }
+.skill-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.skill-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.skill-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.skill-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.skill-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
 
 .skill-card:hover {
   border-color: var(--accent-blue);
@@ -470,7 +522,7 @@ nav a.active {
 }
 
 .skill-list li::before {
-  content: '▹';
+  content: "▹";
   position: absolute;
   left: 0;
   color: var(--accent-blue);
@@ -509,8 +561,12 @@ nav a.active {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.project-card:nth-child(1) { animation-delay: 0.2s; }
-.project-card:nth-child(2) { animation-delay: 0.4s; }
+.project-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.project-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
 
 .project-card:hover {
   border-color: var(--accent-blue);
@@ -603,8 +659,12 @@ nav a.active {
   animation: fadeInLeft 0.6s ease-out forwards;
 }
 
-.education-item:nth-child(1) { animation-delay: 0.2s; }
-.education-item:nth-child(2) { animation-delay: 0.4s; }
+.education-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.education-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
 
 .education-item:hover {
   padding-left: 1rem;
@@ -781,7 +841,6 @@ footer p {
   animation: fadeInUp 0.6s ease-out 0.2s forwards;
 }
 
-
 @media (max-width: 768px) {
   :root {
     --section-spacing: 60px;
@@ -840,9 +899,9 @@ footer p {
   }
 
   nav a {
-  color: #ffffff !important;  /* or white if background is dark */
-  font-weight: 500;
-}
+    color: #ffffff !important; /* or white if background is dark */
+    font-weight: 500;
+  }
   nav li:last-child a {
     border-bottom: none;
   }
